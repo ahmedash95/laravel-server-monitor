@@ -11,9 +11,9 @@ class Notifiable
     /** @var \Spatie\ServerMonitor\Events\Event */
     protected $event;
 
-    public function routeNotificationForMail(): ?string
+    public function routeNotificationForMail()
     {
-        return config('server-monitor.notifications.mail.to');
+        return explode(',',config('server-monitor.notifications.mail.to'));
     }
 
     public function routeNotificationForSlack(): ?string
