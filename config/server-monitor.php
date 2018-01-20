@@ -26,6 +26,11 @@ return [
      */
     'ssh_command_suffix' => '',
 
+    /*
+     * Run check every n minutes
+     */
+    'run_check_every' => 10,
+
     'notifications' => [
 
         'notifications' => [
