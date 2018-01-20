@@ -67,7 +67,7 @@ abstract class CheckDefinition
     public function performNextRunInMinutes(): int
     {
         if ($this->check->hasStatus(CheckStatus::SUCCESS)) {
-            return 10;
+            return config('server-monitor.run_check_every');
         }
 
         return 0;
