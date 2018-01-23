@@ -1,5 +1,5 @@
 {
-    "name": "ahmedash95/laravel-server-monitor",
+    "name": "my-monitor/cli-server-monitor",
     "description": "Monitor servers",
     "keywords": [
         "spatie",
